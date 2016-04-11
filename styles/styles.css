@@ -46,13 +46,13 @@ a:visited {
 }
 
 #desk tr,td,th {
-line-height: 1.5;
-border: 1px solid #000;
-vertical-align: top;
-margin: 0;
-padding: 0;
-text-align: center;
-min-width: 300px;
+  line-height: 1.5;
+  border: 1px solid #000;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-width: 300px;
 }
 
 /*mini / phone*/
