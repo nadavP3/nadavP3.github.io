@@ -1,4 +1,107 @@
 body {
-max-width: 960px;
-margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
+  background:#eee;
 }
+
+img {
+  padding: 3px;
+  border: 3px;
+}
+
+p {
+  margin: 3px;
+}
+
+footer {
+  
+  text-align: center;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lucida Console";
+}
+
+fieldset {
+  background-image: url("../images/dogs_snow_repeat.jpg");
+  background-color: #eee;
+  font-weight: bold;
+  color: lightblue;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+a:visited {
+  color: green;
+}
+.external-links {
+  border-bottom: 1px solid black;
+}
+
+.internal-links {
+  border-bottom: 1px dotted black;
+}
+
+#desk tr,td,th {
+line-height: 1.5;
+border: 1px solid #000;
+vertical-align: text-top;
+margin: 0;
+padding: 0;
+text-align: center;
+min-width: 300px;
+}
+
+/*mini / phone*/
+@media screen and (max-width: 500px) {
+  p,h1,h2,h3,h4,h5,h6,ul,li,a,img,body {
+    min-width: 50px;
+    font-size: 80%;
+    width: 80%;
+    height: 80%;
+
+  }
+  
+  #desk tr,td,th{
+    min-width: 50px;
+    font-size: 80%;
+    width: 80%;
+    height: 80%;
+  }
+
+ .form {
+   min-width: 50px;
+   font-size: 80%;
+   width: 80%;
+   height: 80%;
+ }
+}
+
+
+/*micro / watch*/
+@media screen and (max-width: 200px) {
+  p,h1,h2,h3,h4,h5,h6,ul,li,a,img,body {
+    min-width: 25px;
+    font-size: 50%;
+    width: 30%;
+    height: 30%;
+  }
+  
+  #desk tr,td,th{
+    min-width: 25px;
+    font-size: 50%;
+    width: 30%;
+    height: 30%;
+  }
+
+ fieldset {
+    min-width: 50px;
+    font-size: 50%;
+    width: 30%;
+    height: 30%;
+ }
+}
+
