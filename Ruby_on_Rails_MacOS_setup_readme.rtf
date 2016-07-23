@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red27\green29\blue31;\red26\green26\blue26;\red255\green255\blue255;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 setup rails on MacOS\
+\
+follow {\field{\*\fldinst{HYPERLINK "https://railsapps.github.io/installrubyonrails-mac.html"}}{\fldrslt https://railsapps.github.io/installrubyonrails-mac.html}} top to bottom, when given the choice opt for:\
+RVM over rbenv\
+iterm over native terminal or fish\
+rails 5 over 4.x\
+sublime text 2 over st3 or atom\
+\
+you will also need to follow {\field{\*\fldinst{HYPERLINK "http://wikimatze.de/installing-postgresql-gem-under-ubuntu-and-mac"}}{\fldrslt http://wikimatze.de/installing-postgresql-gem-under-ubuntu-and-mac}}\
+\
+if you get errors installing the PG gem, make sure you set the PATH as explains AND that you have an elephant running, confused? check this:\
+choose Postgres.app over from {\field{\*\fldinst{HYPERLINK "https://www.postgresql.org/download/macosx/"}}{\fldrslt https://www.postgresql.org/download/macosx/}} anything else such as EnterpriseDB or BigSQL\
+the app needs to placed in Applications folder, and run in order to have your website functioning, otherwise after shotgun (and while shotgun is running) you will see spilled drinks error of no connections to database.\
+\
+don\'92t rush, read everything slowly, and don\'92t view this as a hassle, view this as your mac-IT/devOps first lesson.\
+\
+\
+if after everything you are still stuck on installing pg gem, look into (\'91the entire page\'92) this: {\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/30162572/error-message-make-sure-that-gem-install-pg-v-0-18-1-succeeds-before-bundl"}}{\fldrslt https://stackoverflow.com/questions/30162572/error-message-make-sure-that-gem-install-pg-v-0-18-1-succeeds-before-bundl}}\
+in particular, brew installing, OS X dev tools and \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 postgresql \'85 but only after you gave all of the above a very healthy amount of time.\
+\
+for sublime, you might also want to get Package Control from:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://packagecontrol.io/installation#st2"}}{\fldrslt \cf2 https://packagecontrol.io/installation#st2}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 and use (command+shift+p) to install terminal, as explained here:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/"}}{\fldrslt \cf2 https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 and here:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://packagecontrol.io/packages/Terminal"}}{\fldrslt \cf2 https://packagecontrol.io/packages/Terminal}}\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  \
+\
+you might also want to type:\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f1\fs24 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 curl -L https://iterm2.com/misc/install_shell_integration.sh | bash\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 in your iterm2 session.\
+\
+as well as:\
+ln -s /Applications/Sublime\\ Text\\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl\
+This one will make typing \'93subl\'94 in terminal, or \'93subl .\'94 work.\
+\
+tips\\work flow, while inside a project folder via iterm2, you would most likely need to delete the gemfile.lock, then type:\
+bundle install (or bundle update, sometimes)\
+bundle exec rake db:create\
+bundle exec rake db:migrate\
+bundle exec rake db:seed\
+shotgun\
+and don\'92t forget to start postgress \
+\
+its highly recommended that you try the above on:\
+/blog-2-multi-author-challenge/\
+\
+}
