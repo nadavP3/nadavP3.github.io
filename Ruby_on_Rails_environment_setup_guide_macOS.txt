@@ -48,3 +48,6 @@ It’s highly recommended that you try the above on:
 •	You might also need, on some other assignments, to generate your migrations… but that’s beyond the scope of this guide.
 
 9. Did you know that you can type “ls –a” to view hidden files? If you do this at the root folder of your computer’s user (so on DBC’s computers, if you do this inside terminal while at ~/apprentice/) you will able to see (and later open via “subl [file_name]”) cool stuff like…. That elusive .bash_profile, in case you want to borrow some of the settings used onsite (if you already have a bash_profile file, you might want to back it up before you do any changes… just in case you won’t like the outcome).
+
+source:
+http://nadavp3.github.io/Ruby_on_Rails_environment_setup_guide_macOS.txt
