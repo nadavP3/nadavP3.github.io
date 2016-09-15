@@ -1,0 +1,33 @@
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="@txties">
+	<meta name="description" content="Instructions for installing Ruby on Rails Web development environment on macOS.">
+	<meta property="og:description" content="Instructions for installing Ruby on Rails Web development environment on macOS. Don’t rush, read everything s-l-o-w-l-y, and don’t view this as a hassle, view this as your Mac-IT/DevOps first less...">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="Instructions for installing Ruby on Rails Web development environment on macOS.">
+	<title>Installing ROR on MacOS</title>
+	<style type="text/css">body {font-size: 1.1em; line-height: 1.5em; max-width: 45em; margin: auto; padding: 0 2%;} img {max-width: 100%; display: block; margin: .75em auto;}</style>
+</head>
+<body>
+<p>Instructions for installing Ruby on Rails Web development environment on macOS.</p> 
+<p>Don’t rush, read everything s-l-o-w-l-y, and don’t view this as a hassle, view this as your Mac-IT/DevOps first lesson.</p>
+	<ol> 
+		<li><p>Follow <a href="https://railsapps.github.io/installrubyonrails-mac.html">https://railsapps.github.io/installrubyonrails-mac.html</a> top to bottom, when given the choice opt for: RVM instead of RBENV iTerm2 instead of native terminal or fish Rails 5 instead of 4.x or any other version Sublime Text 2 instead of Sublime Text 3 or Atom.</p></li>
+		<li> <p>You will also need to follow <a href="http://wikimatze.de/installing-postgresql-gem-under-ubuntu-and-mac">http://wikimatze.de/installing-postgresql-gem-under-ubuntu-and-mac</a></p> </li>
+		<li> <p>If you get errors installing the PG gem(for example, during “bundle install”), make sure you set the PATH as explained AND that you have an elephant running, confused? Check this: <a href="https://www.postgresql.org/download/macosx/">https://www.postgresql.org/download/macosx/</a> Choose Postgres.app instead of EnterpriseDB or BigSQL or anything else. The app needs to place in Applications folder (as in, ~/Macintosh HD/Applications), and to be running in order to have your website functioning, otherwise after shotgun (and while shotgun is running) you will see spilled drinks error of no connections to database.</p> </li>
+		<li> <p>If after everything you are still stuck on installing PG gem, look into (‘the entire page’) this: <a href="https://stackoverflow.com/questions/30162572/error-message-make-sure-that-gem-install-pg-v-0-18-1-succeeds-before-bundl">https://stackoverflow.com/questions/30162572/error-message-make-sure-that-gem-install-pg-v-0-18-1-succeeds-before-bundl</a> In particular, brew installing, OS X Dev tools and postgresql … but only after you gave all of the above a very healthy amount of time.</p> </li>
+		<li> <p>For sublime, you might also want to get Package Control from: <a href="https://packagecontrol.io/installation#st2">https://packagecontrol.io/installation#st2</a> and use (command+shift+p) to install terminal, as explained here: <a href="https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/">https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/</a> and here: <a href="https://packagecontrol.io/packages/Terminal">https://packagecontrol.io/packages/Terminal</a> </p> </li>
+		<li> <p>you might also want to type: curl -L <a href="https://iterm2.com/misc/install_shell_integration.sh">https://iterm2.com/misc/install_shell_integration.sh</a> | bash in your iTerm2 session.</p> </li> 
+		<li> <p>As well as: ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl This one will make typing “subl” in terminal, or “subl .” work.</p> </li> <li>Tips\workflow:  While inside a project folder via iterm2, you would most likely need to delete the gemfile.lock, then type: bundle install (or bundle update, sometimes) bundle exec rake db:create bundle exec rake db:migrate bundle exec rake db:seed shotgun and don’t forget to start postgress app</li>
+	</ol>
+	<p>It’s highly recommended that you try the above on: /blog-2-multi-author-challenge/ •    You might also need, on some other assignments, to generate your migrations… but that’s beyond the scope of this guide.</p> 
+	<ol> <li>Did you know that you can type “ls –a” to view hidden files? If you do this at the root folder of your computer’s user (so on DBC’s computers, if you do this inside terminal while at ~/apprentice/) you will able to see (and later open via “subl [file_name]”) cool stuff like…. That elusive .bash_profile, in case you want to borrow some of the settings used onsite(such as: &quot;alias be='bundle exec'&quot;), - if you already have a bash_profile file, you might want to back it up before you do any changes… just in case you won’t like the outcome).</li> </ol>
+	<p>source: <a href="http://nadavp3.github.io/Ruby_on_Rails_environment_setup_guide_macOS.txt">http://nadavp3.github.io/Ruby_on_Rails_environment_setup_guide_macOS.txt</a></p>
+<p style="text-align: right">
+</body>
+</html>
