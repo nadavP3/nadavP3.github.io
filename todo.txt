@@ -32,3 +32,20 @@ https://github.com/nyc-wolves-2016/activerecord-design-your-own-challenge
 
 
 https://atom.io/packages/language-babel
+
+
+V2:
+
+Big picture concepts:
+
+1. What is activerecord doing for you?
+2. RESTful routing
+3. MVC Separation
+
+Here are the challenges we talked about today:
+-https://github.com/nyc-wolves-2016/active-record-associations-drill-shirts-challenge (don't do this first)
+-https://github.com/nyc-wolves-2016/blog-1-anonymous-blog-challenge
+-https://github.com/nyc-wolves-2016/user-registration-and-authentication-challenge
+-https://github.com/nyc-wolves-2016/crud-and-rest-checkpoint-challenge
+
+
