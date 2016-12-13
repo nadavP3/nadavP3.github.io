@@ -18,7 +18,18 @@
 <p>Don’t rush, read everything s-l-o-w-l-y, and don’t view this as a hassle, view this as your Mac-IT/DevOps first lesson.</p>
 	<ol> 
 		<li><p>Follow <a href="https://railsapps.github.io/installrubyonrails-mac.html">https://railsapps.github.io/installrubyonrails-mac.html</a> top to bottom, when given the choice opt for: <br>
-		RVM instead of RBENV,<br>
+		RVM instead of RBENV,<br><br><br>
+			update: use this for installing Ruby (instead of RVM):
+			rbenv rehash<br>
+rbenv global 2.3.3<br>
+gem update —system<br>
+gem install bundler<br>
+gem install pry<br>
+gem install pry-byebug<br>
+brew update && brew upgrade && brew doctor<br>
+brew update && brew upgrade && brew doctor<br>
+			<br><br><br>
+			For PostgreSQL get the .app file from the offical site, place it in /Applications, open and only then test your site of choice (you might want to enable "start Postgresql automaticly at login" and "run at background" but that is not mandatory, remember that if this isn't running your website wont run either)
 		iTerm2 instead of either native terminal or Fish,<br>
 		Rails 5 instead of 4.x or any other version,<br>
 		Sublime Text 2 instead of Sublime Text 3 or Atom.</p></li>
@@ -37,6 +48,12 @@
 	</ol>
 	<p>It’s highly recommended that you try the above on: /blog-2-multi-author-challenge/ •    You might also need, on some other assignments, to generate your migrations… but that’s beyond the scope of this guide.</p> 
 	<ul> <li>Did you know that you can type “ls –a” to view hidden files? If you do this at the root folder of your computer’s user (so on DBC’s computers, if you do this inside terminal while at ~/apprentice/) you will able to see (and later open via “subl [file_name]”) cool stuff like…. That elusive .bash_profile, in case you want to borrow some of the settings used onsite(such as: &quot;alias be='bundle exec'&quot;), - if you already have a bash_profile file, you might want to back it up before you do any changes… just in case you won’t like the outcome).</li> </ul>
+	<br><br><br>
+	This two commands are probbaly not needed:<br>
+	$ sudo PATH=$PATH:/usr/local/Cellar/9.6.1/bin gem install pg<br>
+	$ sudo PATH=$PATH:/usr/local/Cellar/PostgreSQL/9.6.1/bin bundle install<br>
+	
+	
 	<p>source: <a href="https://nadavp3.github.io/ROR_MacOS.html">https://nadavp3.github.io/ROR_MacOS.html</a></p>
 </body>
 </html>
