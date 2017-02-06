@@ -20,16 +20,19 @@
 		<li><p>Follow <a href="https://railsapps.github.io/installrubyonrails-mac.html">https://railsapps.github.io/installrubyonrails-mac.html</a> 1-5 fully, skip 6-7 and find other means of doing 8, when given the choice opt for: <br>
 		RBENV instead of RVM,<br>Note: the above link was last updated on Last updated 5 Feb 2017<br><br>
 			update: use this terminal commands for installing Ruby (again, instead of RVM):<br>
-			rbenv rehash<br>
 			rbenv install 2.3.3<br>
+			rbenv rehash<br>
 			rbenv global 2.3.3<br>
 			gem update —system<br>
 			gem install bundler<br>
 			gem install pry<br>
 			gem install pry-byebug<br>
 			brew update && brew upgrade && brew doctor<br>
-			brew update && brew upgrade && brew doctor<br>
-			<br>
+			<br> read more about 'rehash' <a href="https://github.com/rbenv/rbenv#rbenv-rehash">here</a> as you might need to run it a few more times in the future to avoid problems. (I highly suggest that you read the entire page)<br>
+			<br>can't get Rake to work? (seen, "rake Aborted!"? type error superclass mismatch for class Cipher ? <a href="http://stackoverflow.com/questions/41993527/fresh-install-of-rails-and-getting-openssl-errors-already-initialized-constant">look here</a><br>
+			<br>another guide that you could follow <a href="https://gorails.com/setup/osx/10.12-sierra">here</a> just make sure to choose the right version of MacOS(10.12), ruby(2.3.3 for DBC students unless if told otherwise) and PostgreSQL.<br>
+			<br>other enviorment issues? and you have read all of the above? look <a href="http://technotes.iangreenleaf.com/posts/if-youre-having-ruby-environment-problems-i-feel-bad-for-you-son.html">here (esp the part under "For rbenv problems".</a><br>
+			<br>another good read <a href="http://misheska.com/blog/2013/06/15/using-rbenv-to-manage-multiple-versions-of-ruby/">here</a>.
 close the terminal at this point (command+q), open it again, check that the right ruby is there.<br><br>
 			For PostgreSQL get the .app file from the offical site, place it in /Applications, open and only then test your site of choice (you might want to enable "start Postgresql automaticly at login" and "run at background" but that is not mandatory, remember that if this isn't running your website wont run either)
 		iTerm2 instead of either native terminal or Fish,<br>
@@ -50,7 +53,9 @@ close the terminal at this point (command+q), open it again, check that the righ
 	</ol>
 	<p>It’s highly recommended that you try the above on: /blog-2-multi-author-challenge/ •    You might also need, on some other assignments, to generate your migrations… but that’s beyond the scope of this guide.</p> 
 	<ul> <li>Did you know that you can type “ls –a” to view hidden files? If you do this at the root folder of your computer’s user (so on DBC’s computers, if you do this inside terminal while at ~/apprentice/) you will able to see (and later open via “subl [file_name]”) cool stuff like…. That elusive .bash_profile, in case you want to borrow some of the settings used onsite(such as: &quot;alias be='bundle exec'&quot;), - if you already have a bash_profile file, you might want to back it up before you do any changes… just in case you won’t like the outcome).</li> </ul>
-	<br><br><br>
+	<br><br>for actual rails based projet you can try to follow the above and then running "bundle exec rails server"<br>
+	
+	
 	This two commands are probbaly not needed:<br>
 	$ sudo PATH=$PATH:/usr/local/Cellar/9.6.1/bin gem install pg<br>
 	$ sudo PATH=$PATH:/usr/local/Cellar/PostgreSQL/9.6.1/bin bundle install<br>
