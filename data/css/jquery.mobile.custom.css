@@ -1,0 +1,531 @@
+﻿@font-face
+{
+    font-family: "Ubuntu Regular";
+    src: url(../font/ubuntu-r.ttf);
+}
+
+@font-face
+{
+    font-family: "Ubuntu Light";
+    src: url(../font/ubuntu-l.ttf);
+}
+
+@font-face
+{
+    font-family: "Ubuntu Medium";
+    src: url(../font/ubuntu-m.ttf);
+}
+
+@font-face
+{
+    font-family: "Ubuntu Font";
+    src: url(../font/ubuntu-r.ttf);
+}
+
+@font-face
+{
+    font-family: "Ubuntu Font";
+    src: url(../font/ubuntu-b.ttf);
+    font-weight: bold;
+}
+
+.ui-body-c
+{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.ui-body-c
+{
+    border: 1px solid #FFFFFF;
+    color: #5A5B5E;
+    background: #FFFFFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    background-image: -webkit-linear-gradient(top, #fff, #fff);
+    background-image: -moz-linear-gradient(top, #fff, #fff);
+    background-image: -ms-linear-gradient(top, #fff, #fff);
+    background-image: -o-linear-gradient(top, #fff, #fff);
+    background-image: linear-gradient(top, #fff, #fff);
+}
+
+.ui-bar-a
+{
+    border: none;
+    background-color: White;
+    color: #ffffff;
+    font-weight: normal;
+    text-shadow: none;
+    background-image: none;
+    background-image: url(../img/header_dark.png);
+    text-align: center;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+    .ui-bar-a.preview
+    {
+        width: 318px;
+    }
+
+    .ui-bar-a div
+    {
+        font-size: 10px;
+        display: inline;
+        margin-left: -5px;
+    }
+
+    .ui-bar-a .header-image
+    {
+        margin-top: 1.5px;
+    }
+
+        .ui-bar-a .header-image.back-btn
+        {
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+            .ui-bar-a .header-image.back-btn:hover
+            {
+                cursor: pointer;
+            }
+
+        .ui-bar-a .header-image.with-back-btn
+        {
+            margin-left: -28px;
+        }
+
+.ui-btn-text
+{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.ui-bar-a.back
+{
+    height: 40px;
+    line-height: 36px;
+}
+
+.back-button
+{
+    float: left;
+    margin: 3px 0 0 10px;
+}
+
+    .back-button a
+    {
+        display: block;
+        width: 33px;
+        height: 33px;
+        background-image: url(../img/home_buttons.png);
+        background-position: 0 0;
+        border-radius: 3px;
+    }
+
+        .back-button a:active
+        {
+            background-image: url(../img/home_buttons.png);
+            background-position: 0 33px;
+        }
+
+.with-back
+{
+    margin-left: -43px;
+}
+
+.footer
+{
+    border: none;
+    border-top: 1px solid rgb(206,207,208);
+    background-image: none;
+    background: rgb(247,247,247);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    position: absolute !important;
+    height: 18px;
+    line-height: 14px;
+}
+
+.ui-bar-a .footer-label
+{
+    color: rgb(152,153,154);
+    font-size: 10px;
+    float: none;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.ui-body-c .ui-link
+{
+    color: #ED1B23;
+    text-decoration: none;
+    font-family: "Ubuntu Regular";
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+    .ui-body-c .ui-link .text
+    {
+        color: #5A5B5E;
+        font-family: "Ubuntu Regular";
+        font-size: 8px;
+    }
+
+.ui-btn
+{
+    text-align: left;
+    height: 36px;
+    line-height: 36px;
+}
+
+.ui-btn-up-c
+{
+    border: 1px solid rgb(224,224,224);
+    background: rgb(247,247,247);
+    background-image: none;
+    text-shadow: none;
+}
+
+.button
+{
+    color: White;
+    font-size: 12px;
+    width: 120px;
+    height: 37px;
+    text-align: center;
+    line-height: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+}
+
+.buttons-block
+{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.ui-btn-up-c.button
+{
+    border: none;
+    background-image: url(../img/buttons.png);
+    background-position: 0 0;
+    background-size: 100%;
+    text-shadow: none;
+}
+
+.ui-btn-hover-c.button
+{
+    border: none;
+    background-image: url(../img/buttons.png);
+    background-position: 0 0;
+    background-size: 100%;
+    text-shadow: none;
+}
+
+.ui-btn-down-c.button
+{
+    border: none;
+    background-image: url(.data./img/buttons.png);
+    background-position: 0 37px;
+    background-size: 100%;
+    text-shadow: none;
+}
+
+.ui-btn-hover-c.ui-btn-down-c.button
+{
+    border: none;
+    background-image: url(../img/buttons.png);
+    background-position: 0 37px;
+    background-size: 100%;
+    text-shadow: none;
+}
+
+.ui-collapsible-content
+{
+    background-image: url(../img/buttons.png);
+    background-position: 0 37px;
+    background-size: 100%;
+}
+
+.ui-shadow.button
+{
+    box-shadow: none;
+}
+
+.ui-btn-corner-all.button
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ui-btn-active
+{
+    text-shadow: none;
+}
+
+    .ui-btn-active .menu-item-label
+    {
+        text-shadow: none;
+    }
+
+.ui-corner-top
+{
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px/;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ui-corner-bottom
+{
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.ui-btn-hover-c
+{
+    border: 1px solid rgb(224,224,224);
+    background: rgb(253,253,253);
+    background-image: none;
+    text-shadow: none;
+}
+
+.ui-btn-down-c
+{
+    border: 1px solid rgb(224,224,224);
+    background: rgb(253,253,253);
+    background-image: none;
+    text-shadow: none;
+}
+
+.content
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.ui-btn-inner
+{
+    padding: 0 10px;
+    border: none;
+}
+
+.button .ui-btn-inner
+{
+    padding: 5px 7px;
+}
+
+.menu-item-arrow
+{
+    float: right;
+    width: 8px;
+    height: 9px;
+    background-image: url(../img/arrow_right.png);
+    margin-top: 14px;
+}
+
+    .menu-item-arrow.center
+    {
+        margin-top: -14px;
+    }
+
+.menu-item-arrow-down
+{
+    float: right;
+    width: 8px;
+    height: 7px;
+    margin-top: 15px;
+    background-image: url(../img/arrow_down.png);
+}
+
+.ui-btn-hover-c .menu-item-value
+{
+    color: #ED1B23;
+}
+
+.menu-item-label
+{
+    font-size: 10px;
+    color: #5A5B5E;
+    font-family: "Ubuntu Light";
+    float: left;
+    width: 36px;
+    font-weight: normal;
+}
+
+.menu-item-value
+{
+    float: left;
+    color: #5A5B5E;
+    font-family: "Ubuntu Light";
+    font-size: 12px;
+    word-wrap: break-word;
+    font-weight: normal;
+}
+
+.ui-collapsible-heading
+{
+    margin: 0;
+    height: 34px;
+}
+
+.preview-full-site
+{
+    color: rgb(130,130,130);
+    text-align: center;
+    font-size: 18px;
+}
+
+    .preview-full-site a
+    {
+        font-size: 14px;
+    }
+
+        .preview-full-site a:hover
+        {
+            text-decoration: underline;
+        }
+
+.ui-collapsible-heading a
+{
+    text-align: center;
+    color: rgb(130,130,130);
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.ui-btn-icon-left
+{
+    background-image: none;
+}
+
+.ui-collapsible-heading a .ui-btn-inner
+{
+    padding-left: 0;
+}
+
+.down-text-block
+{
+    text-align: center;
+    color: #5A5B5E;
+    font-family: "Ubuntu Light";
+    font-size: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.send-email-block
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .send-email-block .text
+    {
+        color: #5A5B5E;
+        font-size: 16px;
+        font-family: "Ubuntu Regular";
+        margin-bottom: 5px;
+    }
+
+.error-msg
+{
+    color: #ED1B23;
+    font-size: 12px;
+    font-family: "Ubuntu Light";
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+input.ui-input-text.text-input
+{
+    color: #5A5B5E;
+    font-family: "Ubuntu Light";
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    border: 1px solid #ACADAC;
+    box-shadow: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+}
+
+.ui-corner-all.text-input
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ui-body-c input
+{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.border
+{
+    border-radius: 5px;
+    margin-bottom: 17px;
+    border: 1px solid #D5D5D5;
+    background-color: #FAFAFA;
+}
+
+.menu-item-value.center
+{
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+}
+
+.ui-page.ui-body-c.ui-page-active
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.ui-shadow-inset
+{
+    box-shadow: inset 0 0 1px 1px rgba(0,0,0,.2);
+}
+
+.custom-header
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    visibility: hidden;
+}
+
+.ui-controlgroup, fieldset.ui-controlgroup
+{
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.ui-btn
+{
+    margin: 0;
+}
+
+.ui-mobile, .ui-mobile body
+{
+    height: 0px;
+}

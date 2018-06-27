@@ -1,0 +1,87 @@
+﻿.menu-item-icon.address {
+    background-image:url(../img/street_address.png);
+}
+
+.menu-item-icon.email {
+    background-image:url(../img/email_address.png);
+}
+
+.menu-item-icon.url {
+    background-image:url(../img/web_address.png);
+}
+
+.menu-item-icon.mobile-phone {
+    background-image:url(../img/mobile_number.png);
+}
+
+.menu-item-icon.work-phone {
+    background-image:url(../img/work_number.png);
+}
+
+.menu-item-icon.biography {
+    background-image:url(../img/bio_info.png);
+}
+
+.contact-biography-block, .contact-address-block {
+    border: 1px solid #E0E0E0;
+    background-color: #FDFDFD;
+    font-size: 12px;
+    font-family: "Ubuntu Light";
+    padding: 0;
+    width: 100%;
+    display: none;
+}
+
+.contact-biography-block {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.contact-address-block {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: -4px;
+}
+
+.contact-biography-block table, .contact-address-block table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.contact-biography-block table td.icon, .contact-address-block table td.icon {
+    width: 36px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.contact-biography-block table td.arrow-icon, .contact-address-block table td.arrow-icon {
+    width: 22px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 9px;
+}
+
+.contact-address-block table td span {
+    display: block;
+}
+
+.contact-biography-block:hover, .contact-address-block:hover {
+	cursor: pointer;
+}
+
+.contact-biography-block .biography-icon, .contact-address-block .address-icon {
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
+.menu-item-value-phone {
+    float: left;
+	margin-left: 14px;
+}
+
+.menu-item-value-phone.work {
+	font-size: 14px;
+}

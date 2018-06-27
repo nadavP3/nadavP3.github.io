@@ -1,0 +1,183 @@
+﻿.photo-block
+{
+    height:80px;
+    width: 80px;
+    float: left;
+}
+
+.contact-main-info-block {
+    height: auto;
+    margin-bottom: 17px;
+    color: #5A5B5E;
+    position: relative;
+}
+
+.contact-main-info-block img {
+    width: 80px;
+}
+
+.contact-main-info-block div {
+    position: absolute;
+    bottom: 0;
+    margin-left: 90px;
+}
+
+.contact-main-info-block div span {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.contact-main-info-block div .contact-name {
+    font-family: "Ubuntu Medium";
+    font-size: 14px;
+}
+
+.contact-main-info-block div .contact-job {
+    font-family: "Ubuntu Light";
+    font-size: 10px;
+}
+
+.contact-main-info-block div .contact-company {
+    font-family: "Ubuntu Light";
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.photo-block .photo
+{
+    width:80px; 
+    height:80px; 
+    float:left; 
+    background-size: 100% 100%;
+}
+
+.photo-block .photo img
+{
+    width:inherit;
+    height:inherit;
+}
+
+.photo-block .company-name
+{
+    color:rgb(130,130,130); 
+    font-weight:500; 
+    float:left;
+    font-size:18px; 
+    width:65%;
+    word-wrap:break-word;
+}
+
+.name-block
+{
+    margin-left:7px;
+    color:rgb(130,130,130);
+    font-weight:500;
+    float: left;
+}
+
+.name-block .name
+{
+    font-size:14px;
+}
+
+.name-block .job-title
+{
+    font-size:10px;
+    margin-top:3px;
+}
+
+#contact-send-to-email-btn.ui-btn-down-c
+{
+    -moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+#contact-send-to-email-btn.ui-btn-hover-c
+{
+    -moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+#contact-save-to-phone-btn.ui-btn-down-c
+{
+    -moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+#contact-save-to-phone-btn.ui-btn-hover-c
+{
+    -moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+.menu-item-value.left {
+    float:left;
+    margin-left:14px;
+}
+
+.menu-item-value-phone {
+    float:left;
+    color: #5A5B5E;
+    font-family: "Ubuntu Medium";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.menu-item-label-phone {
+    float:left; 
+    width:36px; 
+    color: #5A5B5E;
+    font-family: "Ubuntu Light";
+    font-size: 10px; 
+    font-weight: normal;	
+}
+
+.menu-item-icon
+{
+    width:22px;
+    height:22px;
+    display:inline-block;
+    float:left;
+    margin-top: 7px;
+}
+
+.menu-item-icon.facebook
+{
+    background-image:url(../img/facebook.png);
+}
+
+.menu-item-icon.twitter
+{
+    background-image:url(../img/twitter.png);
+}
+
+.menu-item-icon.linkedin
+{
+    background-image:url(../img/linkedin.png);
+}
+
+.ui-btn-hover-c .menu-item-value-phone
+{
+    color: #ED1B23;
+}
+
+.ui-btn.contact-email-field {
+    height: auto;
+}
+
+.ui-btn.contact-email-field .menu-item-value.left {
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.ui-btn.contact-email-field .menu-item-value.long {
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
