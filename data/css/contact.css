@@ -45,9 +45,9 @@
 
 .photo-block .photo
 {
-    width:80px; 
-    height:80px; 
-    float:left; 
+    width:80px;
+    height:80px;
+    float:left;
     background-size: 100% 100%;
 }
 
@@ -59,10 +59,10 @@
 
 .photo-block .company-name
 {
-    color:rgb(130,130,130); 
-    font-weight:500; 
+    color:rgb(130,130,130);
+    font-weight:500;
     float:left;
-    font-size:18px; 
+    font-size:18px;
     width:65%;
     word-wrap:break-word;
 }
@@ -123,17 +123,17 @@
     float:left;
     color: #5A5B5E;
     font-family: "Ubuntu Medium";
-    font-size: 18px;
+    font-size: 10px;
     font-weight: normal;
 }
 
 .menu-item-label-phone {
-    float:left; 
-    width:36px; 
+    float:left;
+    width:36px;
     color: #5A5B5E;
     font-family: "Ubuntu Light";
-    font-size: 10px; 
-    font-weight: normal;	
+    font-size: 10px;
+    font-weight: normal;
 }
 
 .menu-item-icon
@@ -180,4 +180,3 @@
     word-wrap: break-word;
     white-space: normal;
 }
-
