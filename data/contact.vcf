@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 N;CHARSET=utf-8:Appel;Nadav
 FN;CHARSET=utf-8:Nadav Appel
-TITLE;CHARSET=utf-8:Full Stack Web Developer / IT Professional
+TITLE;CHARSET=utf-8:ServiceNow Administrator
 TEL;CHARSET=utf-8;TYPE=CELL,voice:3109096445
 EMAIL;CHARSET=utf-8:nadavp3@gmail.com
 END:VCARD
